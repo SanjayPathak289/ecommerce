@@ -36,7 +36,7 @@ const Navbar = ({ isAuth, setIsAuth }) => {
 
 
         <div className="logo">
-          <p>Investment Compass
+          <p>Ecommerce
             <ArchiveIcon style={{ marginLeft: "5px" }} />
           </p>
 

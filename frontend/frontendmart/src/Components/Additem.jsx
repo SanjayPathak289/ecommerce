@@ -123,10 +123,10 @@ const Additem = () => {
                     <div className="selectCateg">
                         <select name="pcateg" id="pcateg" onChange={inputEvent} required>
                             <option value="" disabled selected>Select your Category</option>
-                            <option value="academics">Academics</option>
-                            <option value="technology">Technology</option>
-                            <option value="investments">Investments</option>
-                            <option value="trading">Trading</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothes">Clothes</option>
+                            <option value="books">Books</option>
+                            <option value="shoes">Shoes</option>
                             <option value="miscellaneous">Miscellaneous</option>
                         </select>
 

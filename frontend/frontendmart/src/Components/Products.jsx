@@ -70,16 +70,16 @@ const Products = () => {
                                 <Button size={"3"} onClick={() => filterItem("")}>All</Button>
                             </li>
                             <li>
-                                <Button size={"3"} onClick={() => filterItem("academics")}>Academics</Button>
+                                <Button size={"3"} onClick={() => filterItem("electronics")}>Electronics</Button>
                             </li>
                             <li>
-                                <Button size={"3"} onClick={() => filterItem("technology")}>Technology</Button>
+                                <Button size={"3"} onClick={() => filterItem("clothes")}>Clothes</Button>
                             </li>
                             <li>
-                                <Button size={"3"} onClick={() => filterItem("investments")}>Investments</Button>
+                                <Button size={"3"} onClick={() => filterItem("books")}>Books</Button>
                             </li>
                             <li>
-                                <Button size={"3"} onClick={() => filterItem("trading")}>Trading</Button>
+                                <Button size={"3"} onClick={() => filterItem("shoes")}>Shoes</Button>
                             </li>
                             <li>
                                 <Button size={"3"} onClick={() => filterItem("miscellaneous")}>Miscellaneous</Button>
