@@ -15,7 +15,7 @@ const ShowMessages = (props) => {
                     receiverId: props.rId,
                 }
             }
-            const conv = await axios.post("https://investment-compass-urnz.onrender.com/api/chats/conversation/", sendReceiveId);
+            const conv = await axios.post("https://ecommerce-97tk.onrender.com/api/chats/conversation/", sendReceiveId);
             setCurrentChat(conv.data);
         }
         convFunc();
@@ -29,7 +29,7 @@ const ShowMessages = (props) => {
 
     useEffect(() => {
         const getMessages = async () => {
-            const res = await axios.get("https://investment-compass-urnz.onrender.com/api/message/messages", {
+            const res = await axios.get("https://ecommerce-97tk.onrender.com/api/message/messages", {
                 params: {
                     cid: currentChat._id,
                 }
@@ -43,7 +43,7 @@ const ShowMessages = (props) => {
 
 
     const handleMessageSubmit = async (e) => {
-        
+
 
 
         const message = {
@@ -52,7 +52,7 @@ const ShowMessages = (props) => {
             text: newMessage,
         };
         try {
-            const res = await axios.post("https://investment-compass-urnz.onrender.com/api/message/messages", message);
+            const res = await axios.post("https://ecommerce-97tk.onrender.com/api/message/messages", message);
             setMessages([...messages, res.data]);
             setNewMessage("");
         } catch (error) {
@@ -66,11 +66,11 @@ const ShowMessages = (props) => {
             <div className='messageShowingDiv'>
                 {props.sender._id !== props.rId ? (
                     messages.map((m) => (
-                        <Message message={m} own={m.sender === props.sender._id} key={m._id}/>
+                        <Message message={m} own={m.sender === props.sender._id} key={m._id} />
                     ))
-                ) : 
-                    <div style={{color :"black"}}>You Can't Message Yourself</div>
-                    
+                ) :
+                    <div style={{ color: "black" }}>You Can't Message Yourself</div>
+
 
                 }
 

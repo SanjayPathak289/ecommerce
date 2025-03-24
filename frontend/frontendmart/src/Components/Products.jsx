@@ -10,7 +10,7 @@ const Products = () => {
     const [searchItem, setSearchItem] = useState("");
     useEffect(() => {
         const getP = () => {
-            axios.get("https://investment-compass-urnz.onrender.com/api/product/products").then((res) => {
+            axios.get("https://ecommerce-97tk.onrender.com/api/product/products").then((res) => {
                 setAllProducts(res.data);
                 setCategoryProducts(res.data);
                 // console.log(res.data);
@@ -94,7 +94,7 @@ const Products = () => {
                             categoryProduct.map((user) => (
                                 user.productinfo.map((product) => (
                                     <Singleproduct
-                                        key={product.productId} 
+                                        key={product.productId}
                                         id={user._id}
                                         user={user.email}
                                         pcateg={product.pcateg}

@@ -13,7 +13,7 @@ const paymentRoutes = require("./routes/paymentRoutes");
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'https://investment-compass-urnz.onrender.com',
+    origin: 'https://ecommerce-97tk.onrender.com',
     methods: ["POST", "GET", "DELETE"],
     credentials: true,
     optionSuccessStatus: 200

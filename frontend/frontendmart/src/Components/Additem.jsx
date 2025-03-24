@@ -35,7 +35,7 @@ const Additem = () => {
             body: formData
         };
         formData.append("json", sendproductData);
-        const res = await axios.post("https://investment-compass-urnz.onrender.com/api/product/additem", formData)
+        const res = await axios.post("https://ecommerce-97tk.onrender.com/api/product/additem", formData)
         if (res.data.success) {
             setProduct({
                 pimage: [],

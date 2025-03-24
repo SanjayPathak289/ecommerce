@@ -7,8 +7,8 @@ const Myproducts = () => {
     const [myProducts, setMyProducts] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get("https://investment-compass-urnz.onrender.com/api/product/myproducts").then((res) => {
-        
+        axios.get("https://ecommerce-97tk.onrender.com/api/product/myproducts").then((res) => {
+
             if (res.data.message === "Error") {
                 navigate("/signin");
             }

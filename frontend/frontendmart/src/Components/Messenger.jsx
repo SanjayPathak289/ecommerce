@@ -11,13 +11,13 @@ const Messenger = () => {
     const [newMessage, setNewMessage] = useState("");
     const user = JSON.parse(localStorage.getItem("user"));
 
-    
+
 
     useEffect(() => {
         const getConversation = async () => {
             try {
 
-                const res = await axios.get("https://investment-compass-urnz.onrender.com/api/chats/allconversation/" + user._id)
+                const res = await axios.get("https://ecommerce-97tk.onrender.com/api/chats/allconversation/" + user._id)
                 // console.log(res.data);
                 setConversations(res.data);
 
@@ -31,7 +31,7 @@ const Messenger = () => {
     useEffect(() => {
         const getMessages = async () => {
             try {
-                const res = await axios.get("https://investment-compass-urnz.onrender.com/api/message/messages/" + currentChat?._id);
+                const res = await axios.get("https://ecommerce-97tk.onrender.com/api/message/messages/" + currentChat?._id);
 
                 setMessages(res.data);
             } catch (error) {
@@ -49,7 +49,7 @@ const Messenger = () => {
             text: newMessage,
         };
         try {
-            const res = await axios.post("https://investment-compass-urnz.onrender.com/api/message/messages", message);
+            const res = await axios.post("https://ecommerce-97tk.onrender.com/api/message/messages", message);
             setMessages([...messages, res.data]);
             setNewMessage("");
         } catch (error) {

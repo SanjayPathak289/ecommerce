@@ -31,15 +31,15 @@ const SignIn = ({ setIsAuth }) => {
     const siginFormSubmit = async (event) => {
         event.preventDefault();
         const sendSignInData = JSON.stringify(signinData);
-        
+
         try {
-            const res = await axios.post("https://investment-compass-urnz.onrender.com/api/user/signin", {
+            const res = await axios.post("https://ecommerce-97tk.onrender.com/api/user/signin", {
                 email: signinData.email,
                 pass: signinData.pass
             }, {
                 headers: {
                     "Content-Type": "application/json",
-                    "Access-Control-Allow-Origin": "https://investment-compass-urnz.onrender.com",
+                    "Access-Control-Allow-Origin": "https://ecommerce-97tk.onrender.com",
                 }
             })
 

@@ -13,7 +13,7 @@ const Singleproduct = (props) => {
 
     useEffect(() => {
         const fetchUser = async () => {
-            const res = await axios.get("https://investment-compass-urnz.onrender.com/api/user/getuser", {
+            const res = await axios.get("https://ecommerce-97tk.onrender.com/api/user/getuser", {
                 params: {
                     user: props.user
                 }
@@ -29,7 +29,7 @@ const Singleproduct = (props) => {
         <>
             <div className='myProductInfo'>
                 <div className='myImageProduct'>
-                    {props.pimage ? <img src={"https://investment-compass-urnz.onrender.com/uploads/" + props.pimage[0]} alt="" />
+                    {props.pimage ? <img src={"https://ecommerce-97tk.onrender.com/uploads/" + props.pimage[0]} alt="" />
                         : null}
                 </div>
                 <div className='myInfoProduct'>
