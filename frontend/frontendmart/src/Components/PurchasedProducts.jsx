@@ -26,7 +26,7 @@ const PurchasedProducts = () => {
                 <Table.Root variant='surface'>
                     <Table.Header>
                         <Table.Row align={"center"}>
-                            <Table.ColumnHeaderCell align='center'>Course</Table.ColumnHeaderCell>
+                            <Table.ColumnHeaderCell align='center'>Product</Table.ColumnHeaderCell>
                             <Table.ColumnHeaderCell align='center'>Price</Table.ColumnHeaderCell>
                             <Table.ColumnHeaderCell align='center'>Status</Table.ColumnHeaderCell>
                         </Table.Row>

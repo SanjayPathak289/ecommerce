@@ -111,12 +111,12 @@ const Additem = () => {
                     <div className="infoBox">
                         <div className="productNameBox">
                             <TextField.Root>
-                                <TextField.Input placeholder="Course Name" size={"3"} onChange={inputEvent} name='pname' type='text' required />
+                                <TextField.Input placeholder="Product Name" size={"3"} onChange={inputEvent} name='pname' type='text' required />
                             </TextField.Root>
 
                         </div>
                         <div className="producDescBox" size="3">
-                            <TextArea placeholder="Course Description" size={"3"} style={{ height: "250%" }} onChange={inputEvent} name='pdesc' required />
+                            <TextArea placeholder="Product Description" size={"3"} style={{ height: "250%" }} onChange={inputEvent} name='pdesc' required />
                         </div>
                     </div>
 
@@ -135,7 +135,7 @@ const Additem = () => {
 
                     <div className="productPrice">
                         <TextField.Root>
-                            <TextField.Input placeholder="Course Price" size={"3"} type='number' onChange={inputEvent} name='pprice' />
+                            <TextField.Input placeholder="Product Price" size={"3"} type='number' onChange={inputEvent} name='pprice' />
                         </TextField.Root>
                     </div>
 
@@ -144,7 +144,7 @@ const Additem = () => {
 
                 </div>
 
-                <Button style={{ cursor: "pointer" }} type='submit' className='submitProduct' size={"4"} >Add Course</Button>
+                <Button style={{ cursor: "pointer" }} type='submit' className='submitProduct' size={"4"} >Add Product</Button>
             </form>
 
 

@@ -45,8 +45,8 @@ const Navbar = ({ isAuth, setIsAuth }) => {
         <div className='mainLinks'>
           <ul>
             <Link to={"/"} className='linkli'>Home</Link>
-            <Link to={"/additem"} className='linkli'>Add Course</Link>
-            <Link to={"/products"} className='linkli'>Courses</Link>
+            <Link to={"/additem"} className='linkli'>Add Products</Link>
+            <Link to={"/products"} className='linkli'>Products</Link>
           </ul>
         </div>
       </div>
@@ -73,8 +73,8 @@ const Navbar = ({ isAuth, setIsAuth }) => {
             <DropdownMenu.Content>
               <Link to={"/profile"} style={{ textDecoration: "none", }} className='linkNav'> <DropdownMenu.Item style={{ cursor: "pointer", color: "black" }}>Profile</DropdownMenu.Item></Link>
               <DropdownMenu.Separator />
-              <Link to={"/myproducts"} style={{ textDecoration: "none" }} className='linkNav'><DropdownMenu.Item style={{ cursor: "pointer", color: "black", }} >My Listed Courses</DropdownMenu.Item></Link>
-              <Link to={"/mypurchases"} style={{ textDecoration: "none" }} className='linkNav'><DropdownMenu.Item style={{ cursor: "pointer", color: "black", }} >My Bought Courses</DropdownMenu.Item></Link>
+              <Link to={"/myproducts"} style={{ textDecoration: "none" }} className='linkNav'><DropdownMenu.Item style={{ cursor: "pointer", color: "black", }} >My Listed Products</DropdownMenu.Item></Link>
+              <Link to={"/mypurchases"} style={{ textDecoration: "none" }} className='linkNav'><DropdownMenu.Item style={{ cursor: "pointer", color: "black", }} >My Bought Products</DropdownMenu.Item></Link>
               <Link to={"/mymessages"} style={{ textDecoration: "none" }} className='linkNav'><DropdownMenu.Item style={{ cursor: "pointer", color: "black" }} >My Messages</DropdownMenu.Item></Link>
               <Link to={"/myreferrals"} style={{ textDecoration: "none" }} className='linkNav'><DropdownMenu.Item style={{ cursor: "pointer", color: "black" }} >My Referrals</DropdownMenu.Item></Link>
               <DropdownMenu.Separator />

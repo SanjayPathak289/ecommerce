@@ -36,7 +36,7 @@ const Profile = () => {
                 <div className='leftProfileBox'>
                     <div className='statsBox'>
                         <div >
-                            <p>Your Course Listed</p>
+                            <p>Your Product Listed</p>
                             {profile && profile.productinfo &&
                                 <div className='itemListed' >
                                     {profile.productinfo.length}

@@ -230,9 +230,9 @@ const ProductInfo = (props) => {
                                 </Dialog.Trigger>
 
                                 <Dialog.Content style={{ maxWidth: 450 }}>
-                                    <Dialog.Title>Edit Course</Dialog.Title>
+                                    <Dialog.Title>Edit Product</Dialog.Title>
                                     <Dialog.Description size="2" mb="4">
-                                        Make changes to your course.
+                                        Make changes to your Product.
                                     </Dialog.Description>
 
                                     <Flex direction="column" gap="3">
@@ -305,7 +305,7 @@ const ProductInfo = (props) => {
                 </div>
 
                 {owner ? <p style={{ fontSize: "2rem", fontWeight: "bolder", backgroundColor: "#3772ff", padding: "0.2rem", borderRadius: "10px", color: "white" }}>Owner : {owner}</p> : null}
-                <p style={{ fontSize: "2rem", fontWeight: "bolder" }}>Course : {product && product.pname}</p>
+                <p style={{ fontSize: "2rem", fontWeight: "bolder" }}>Product : {product && product.pname}</p>
                 <p>Desc : {product && product.pdesc}</p>
                 <p>Category : {product && product.pcateg}</p>
                 <p>Price : {product && product.pprice}</p>

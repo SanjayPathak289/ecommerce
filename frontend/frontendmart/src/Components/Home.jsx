@@ -8,7 +8,7 @@ const Home = () => {
         <>
             <div className='homeContainer'>
                 <div className='leftHome'>
-                    <p style={{ color: "#3772ff" }}>Sell Your Courses</p>
+                    <p style={{ color: "#3772ff" }}>Sell Your Products</p>
                     <p>Earn Money</p>
                     <Button size={"4"} style={{
                         marginTop: "1rem",

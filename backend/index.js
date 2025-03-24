@@ -9,7 +9,7 @@ const chatRoutes = require("./routes/chatRoutes")
 const messageRoutes = require("./routes/messageRoutes")
 const referralRoute = require("./routes/referralRoute");
 const paymentRoutes = require("./routes/paymentRoutes");
-
+const { job } = require("./cron/cron.js");
 const app = express();
 app.use(express.json());
 app.use(cors({
@@ -20,7 +20,7 @@ app.use(cors({
 }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-
+job.start();
 app.use("/uploads", express.static("./public/Images"));
 
 
