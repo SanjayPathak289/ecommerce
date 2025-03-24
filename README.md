@@ -4,7 +4,8 @@ Database Management: Using MongoDB to manage and retrieve data efficiently, demo
 Authentication and Security: Implementing user authentication and authorization using JWT, ensuring secure access to user data and transactions.
 RESTful API: Creating and consuming RESTful APIs to handle various operations such as user registration, product listing.
 
-# How to run
-## Backend - Go to /backend Run npm install and then npm run start to run backend server
-## Frontend - Go to /frontend/frontendmart Run npm install and then npm run dev
 Project Hosted Link - https://ecommerce-97tk.onrender.com/
+
+# How to run
+## Backend - Go to /backend Run npm install and then npm run start to run backend server.
+## Frontend - Go to /frontend/frontendmart Run npm install and then npm run dev to start frontend.
